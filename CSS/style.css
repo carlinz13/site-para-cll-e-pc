@@ -1,0 +1,365 @@
+
+
+/* =====================================
+   PC — ESTILO ORIGINAL
+   ===================================== */
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    margin-top: 500px;
+}
+
+.inicio h1 {
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    margin: 0;
+    top: -400px;
+}
+
+.inicio p {
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    left: 100px;
+    top: -400px;
+}
+
+.inicio button {
+    width: 250px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #ff6464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+    top: -370px;
+}
+
+.foto img {
+    top: -400px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    right: 100px;
+}
+
+.pag2 {
+    background-color: #cae8f1;
+    padding: 40px;
+    width: 200vh;
+    height: 88vh;
+}
+
+.pag23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+    top: 20%;
+}
+
+.duasdiv {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-size: 20px;
+    background-color: whitesmoke;
+    zoom: 130%;
+}
+
+.duasdiv p {
+    margin: 0;
+}
+
+.escr {
+    margin-right: 30vw;
+}
+
+.expe2 {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    margin: 2vw;
+}
+
+.expe2 img {
+    object-fit: cover;
+    width: 25vw;
+    height: 37vh;
+    border-radius: 8%;
+}
+
+.expe2 h2,
+.expe2 h3 {
+    font-size: 3vw;
+}
+
+.expe2 p {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.linha {
+    width: 80%;
+    height: 0.1vh;
+    background-color: rgb(136, 134, 134);
+    margin: 2vw;
+}
+
+.pa3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+    top: 2%;
+}
+
+.pa {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-size: 20px;
+    background-color: whitesmoke;
+    zoom: 100%;
+    width: 75vh;
+    height: 70vh;
+}
+
+.final {
+    background-color: #cae8f1;
+    padding: 40px;
+    width: 200vh;
+    height: 100vh;
+}
+
+.pa h1 {
+    font-size: 4vw;
+    position: relative;
+    left: 22%;
+    margin: 0;
+}
+
+.pa img {
+    position: relative;
+    left: 25%;
+}
+
+.pa p {
+    font-size: 2vw;
+    margin: 0;
+}
+
+/* =====================================
+   CELULAR E TABLET — ATÉ 1000px
+   ===================================== */
+
+@media screen and (max-width: 1000px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* INÍCIO */
+
+    .inicio {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 30px 20px;
+        margin-top: 0;
+    }
+
+    .inicio h1 {
+        font-size: clamp(32px, 8vw, 45px);
+        text-align: center;
+        position: static;
+        margin: 0;
+    }
+
+    .inicio p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        position: static;
+        margin: 0;
+    }
+
+    .inicio button {
+        width: 100%;
+        max-width: 250px;
+        padding: 15px;
+        font-size: 16px;
+        position: static;
+        margin: 0;
+    }
+
+    .foto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto img {
+        position: static;
+        width: min(75vw, 300px);
+        height: min(75vw, 300px);
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* SEGUNDA PÁGINA */
+
+    .pag2 {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .pag23 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+        position: static;
+    }
+
+    .duasdiv {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        zoom: 100%;
+        border-radius: 12px;
+    }
+
+    .duasdiv p {
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .escr {
+        margin-right: 0;
+    }
+
+    /* EXPERIÊNCIAS */
+
+    .expe2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 25px 0;
+        width: 100%;
+    }
+
+    .expe2 img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .expe2 h2,
+    .expe2 h3 {
+        font-size: 26px;
+        margin: 0 0 10px;
+    }
+
+    .expe2 p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .linha {
+        width: 100%;
+        height: 1px;
+        margin: 25px 0;
+    }
+
+    /* CARTÕES */
+
+    .pa3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+        position: static;
+    }
+
+    .pa {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 25px 20px;
+        font-size: 16px;
+        zoom: 100%;
+        border-radius: 12px;
+    }
+
+    .pa h1 {
+        font-size: 28px;
+        text-align: center;
+        position: static;
+        margin: 0 0 20px;
+    }
+
+    .pa img {
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto 20px;
+        object-fit: contain;
+    }
+
+    .pa p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* PÁGINA FINAL */
+
+    .final {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+}
